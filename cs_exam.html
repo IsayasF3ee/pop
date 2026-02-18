@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computer Science Exam</title>
+    <link rel="stylesheet" href="cs_exam.css">
+</head>
+<body>
+
+    <!-- Sidebar Navbar -->
+    <div class="navbar">
+        <h2>Exams</h2>
+        
+        <button onclick="loadExam('exam1')">exam1 Exam</button>
+        <button onclick="loadExam('exam2')">exam2 Exam</button>
+<button onclick="loadExam('exam3')">exam3 Exam</button>
+<button onclick="loadExam('exam4')">exam4 Exam</button>
+<button onclick="loadExam('exam5')">exam5 Exam</button>
+<button onclick="loadExam('moe')">moe Exam</button>
+<button onclick="loadExam('RVU')">RVU Exam</button>
+<button onclick="loadExam('HAWAASA')">HAWAASA Exam</button>
+<button onclick="loadExam('JIMMAA')">JIMMAA Exam</button>
+<button onclick="loadExam('WALLAGA')">WALLAGA Exam</button>
+          <button onclick="loadExam('AMBO')">AMBO Exam</button>
+          <button onclick="loadExam('ADAMA')">ADAMA Exam</button>
+        <button onclick="loadExam('WSU1')">WSU1 Exam</button>
+        <button onclick="loadExam('2015')">2015 Exam</button>
+        <button onclick="loadExam('2015+1')">2015+1 Exam</button>
+        <button onclick="loadExam('2015+2')">2015+2 Exam</button>
+        <button onclick="loadExam('2016')">2016 Exam</button>
+       <button onclick="loadExam('2017')">2017 Exam</button>
+        <button onclick="loadExam('2018')">2018 Exam</button>
+ 
+    
+    </div>
+
+    <!-- Main Content -->
+    <div class="main">
+        <div id="question-container" class="question-card">
+            <h3 id="question-text">Select an exam to start.</h3>
+            <div id="options" class="options"></div>
+            <div id="explanation" class="explanation"></div>
+        </div>
+
+        <!-- Navigation Buttons -->
+        <div class="navigation">
+            <button id="back-btn" onclick="prevQuestion()">Back</button>
+            <button id="next-btn" onclick="nextQuestion()">Next</button>
+            <button id="submit-btn" class="submit-btn" onclick="submitExam()">Submit</button>
+        </div>
+
+        <!-- Score Display -->
+        <div id="score-display" style="display:none; margin-top:20px; font-size:1.2em; font-weight:bold;"></div>
+    </div>
+
+    <script src="cs_exams.js"></script>
+</body>
+</html>

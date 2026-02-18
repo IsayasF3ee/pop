@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computer Science Exam</title>
+    <link rel="stylesheet" href="cs_exam.css">
+</head>
+<body>
+
+    <!-- Sidebar Navbar -->
+    <div class="navbar">
+        <h2> exit Exams computer science</h2> 
+        <button onclick="loadExam('moe2016')">moe2016 Exam</button> 
+        <button onclick="loadExam('moe2017')">moe2017 Exam</button> 
+<button onclick="loadExam('AAU2023')">AAU2023 Exam</button> 
+<button onclick="loadExam('AAU2025')">AAU2025 Exam</button> 
+        <button onclick="loadExam('hu')">hu Exam</button> 
+         <button onclick="loadExam('admasu3')">admasu3 Exam</button> 
+         <button onclick="loadExam('admasu2')">admasu2 Exam</button> 
+         <button onclick="loadExam('admasu')">admasu Exam</button> 
+         <button onclick="loadExam('hu')">hu Exam</button> 
+         <button onclick="loadExam('wsu1')">wsu1 Exam</button>
+         <button onclick="loadExam('wsu2')">wsu2 Exam</button>
+         <button onclick="loadExam('wsu3')">wsu3 Exam</button>
+         <button onclick="loadExam('model')">model Exam</button>
+         <button onclick="loadExam('RVU')">RVU Exam</button>
+         <button onclick="loadExam('MOE')">MOE Exam</button>
+         <button onclick="loadExam('OBU')">OBU Exam</button>
+         <button onclick="loadExam('AUTOMATA')">AUTOMATA Exam</button>
+        <button onclick="loadExam('Jimmaa University')">Jimmaa University exam</button>
+         <button onclick="loadExam('Finfinnee')">Finfinnee Exam</button>
+         <button onclick="loadExam('Arbaminch')">Arbaminch Exam</button>
+          <button onclick="loadExam('exit exam')">exit Exam</button>
+         <button onclick="loadExam('haramayaa')">haramayaa Exam</button>
+          <button onclick="loadExam('AMBO')">AMBO Exam</button>
+          <button onclick="loadExam('ADAMA')">ADAMA Exam</button>
+        <button onclick="loadExam('WSU1')">WSU1 Exam</button>
+        <button onclick="loadExam('2015')">2015 Exam</button>
+        <button onclick="loadExam('2015+1')">2015+1 Exam</button>
+        <button onclick="loadExam('2015+2')">2015+2 Exam</button>
+        <button onclick="loadExam('2016')">2016 Exam</button>
+       <button onclick="loadExam('2017')">2017 Exam</button>
+        <button onclick="loadExam('2018')">2018 Exam</button>
+ 
+    
+    </div>
+
+    <!-- Main Content -->
+    <div class="main">
+        <div id="question-container" class="question-card">
+            <h3 id="question-text">Select an exam to start.</h3>
+            <div id="options" class="options"></div>
+            <div id="explanation" class="explanation"></div>
+        </div>
+
+        <!-- Navigation Buttons -->
+        <div class="navigation">
+            <button id="back-btn" onclick="prevQuestion()">Back</button>
+            <button id="next-btn" onclick="nextQuestion()">Next</button>
+            <button id="submit-btn" class="submit-btn" onclick="submitExam()">Submit</button>
+        </div>
+
+        <!-- Score Display -->
+        <div id="score-display" style="display:none; margin-top:20px; font-size:1.2em; font-weight:bold;"></div>
+    </div>
+
+    <script src="cs_exams.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

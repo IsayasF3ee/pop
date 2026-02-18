@@ -1,0 +1,166 @@
+/* Reset & base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    background: #f5f6fa;
+    color: #333;
+}
+
+/* Sidebar Navbar */
+.navbar {
+    width: 220px;
+    background-color: #2f3640;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.navbar h2 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
+.navbar button {
+    padding: 10px;
+    background-color: #353b48;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.navbar button:hover {
+    background-color: #718093;
+}
+
+/* Main content */
+.main {
+    flex: 1;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Question Card */
+.question-card {
+    background: #fff;
+    padding: 20px 25px;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+}
+
+.question-card:hover {
+    transform: translateY(-3px);
+}
+
+.question-card h3 {
+    margin-bottom: 15px;
+    font-size: 1.2em;
+}
+
+.options {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 15px;
+}
+
+.options button {
+    padding: 10px;
+    border: 2px solid #dcdde1;
+    border-radius: 8px;
+    background: #f5f6fa;
+    cursor: pointer;
+    transition: 0.3s;
+    text-align: left;
+}
+
+.options button:hover {
+    background: #dcdde1;
+}
+
+.options button.correct {
+    background-color: #4cd137;
+    color: #fff;
+    border-color: #4cd137;
+}
+
+.options button.wrong {
+    background-color: #e84118;
+    color: #fff;
+    border-color: #e84118;
+}
+
+/* Explanation */
+.explanation {
+    background-color: #f1f2f6;
+    border-left: 4px solid #40739e;
+    padding: 10px 15px;
+    border-radius: 5px;
+    display: none;
+    font-size: 0.95em;
+}
+
+/* Navigation Buttons */
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.navigation button {
+    flex: 1;
+    padding: 12px;
+    background-color: #40739e;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.navigation button:hover {
+    background-color: #2e86de;
+}
+
+/* Submit Button Special */
+.navigation button.submit-btn {
+    background-color: #44bd32;
+}
+
+.navigation button.submit-btn:hover {
+    background-color: #4cd137;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    body {
+        flex-direction: column;
+    }
+    .navbar {
+        width: 100%;
+        flex-direction: row;
+        overflow-x: auto;
+        gap: 5px;
+        padding: 10px;
+    }
+    .main {
+        padding: 15px;
+    }
+    .navigation {
+        flex-direction: column;
+    }
+}
